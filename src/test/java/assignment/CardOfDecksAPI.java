@@ -1,4 +1,4 @@
-package org.example;
+package assignment;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
@@ -17,8 +17,8 @@ public class CardOfDecksAPI {
 
 
     @Test
-    public void createDeck(){
-        getJokersEnabled();
+    public void runTest(){
+        createDeckOfCards();
         drawCard();
         drawCard();
         drawCard();
@@ -27,7 +27,7 @@ public class CardOfDecksAPI {
     }
 
 
-    public static void getJokersEnabled() {
+    public static void createDeckOfCards() {
         String endPointCreateDeck = "/deck/new";
         RestAssured.baseURI = URL;
         RequestSpecification request = RestAssured.given();

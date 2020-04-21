@@ -20,10 +20,6 @@ public class CardOfDecksAPI {
     public void runTest(){
         createDeckOfCards();
         drawCard();
-        drawCard();
-        drawCard();
-        drawCard();
-        drawCard();
     }
 
 

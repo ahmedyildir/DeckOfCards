@@ -1,13 +1,14 @@
 package assignment;
 
 import io.restassured.response.Response;
+import org.junit.BeforeClass;
+import org.junit.Test;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+
 
 public class CreateDeck extends BaseClass {
 
-    @BeforeMethod
+    @BeforeClass
     public void setUpTest(){
         createDeckApiResponse = createDeckCall();
         deck_id = helper.pickDeckId(createDeckCall());

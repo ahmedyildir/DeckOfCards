@@ -1,0 +1,8 @@
+<suite name = "DeckOfCards">
+    <test name= "Assignment">
+        <classes>
+            <class name="assignment.CreateDeck"/>
+            <class name="assignment.DrawCards"/>
+        </classes>
+    </test>
+</suite>

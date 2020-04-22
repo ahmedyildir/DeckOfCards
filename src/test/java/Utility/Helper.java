@@ -1,5 +1,6 @@
 package Utility;
 
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.testng.Assert;
 
@@ -11,8 +12,10 @@ public class Helper {
         if ("".equals(responseBody)) {
             Assert.fail();
         }
-        String[] array = responseBody.replaceAll("[{}:,\"]","").split(" ");
-        String deckID = array[3];
+        JsonPath jp = response.jsonPath();
+//        String[] array = responseBody.replaceAll("[{}:,\"]","").split(" ");
+//        String deckID = array[3];
+        String deckID = jp.get("deck_id");
         return deckID;
     }
 

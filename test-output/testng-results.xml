@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="DeckOfCards" duration-ms="2542" started-at="2020-04-21T22:53:03 EDT" finished-at="2020-04-21T22:53:05 EDT">
+    <groups>
+    </groups>
+    <test name="Assignment" duration-ms="2542" started-at="2020-04-21T22:53:03 EDT" finished-at="2020-04-21T22:53:05 EDT">
+      <class name="assignment.CreateDeck">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:assignment.CreateDeck@36fc695d]" name="setUpTest" is-config="true" duration-ms="1390" started-at="2020-04-21T22:53:03 EDT" finished-at="2020-04-21T22:53:04 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="testPostCallFail()[pri:0, instance:assignment.CreateDeck@36fc695d]" name="testPostCallFail" duration-ms="216" started-at="2020-04-21T22:53:04 EDT" finished-at="2020-04-21T22:53:04 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostCallFail -->
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:assignment.CreateDeck@36fc695d]" name="setUpTest" is-config="true" duration-ms="373" started-at="2020-04-21T22:53:04 EDT" finished-at="2020-04-21T22:53:05 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="testSuccessCreateDeck()[pri:0, instance:assignment.CreateDeck@36fc695d]" name="testSuccessCreateDeck" duration-ms="0" started-at="2020-04-21T22:53:05 EDT" finished-at="2020-04-21T22:53:05 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessCreateDeck -->
+      </class> <!-- assignment.CreateDeck -->
+      <class name="assignment.DrawCards">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:assignment.DrawCards@28701274]" name="setUpTest" is-config="true" duration-ms="373" started-at="2020-04-21T22:53:05 EDT" finished-at="2020-04-21T22:53:05 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="pickCards()[pri:0, instance:assignment.DrawCards@28701274]" name="pickCards" duration-ms="163" started-at="2020-04-21T22:53:05 EDT" finished-at="2020-04-21T22:53:05 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pickCards -->
+      </class> <!-- assignment.DrawCards -->
+    </test> <!-- Assignment -->
+  </suite> <!-- DeckOfCards -->
+</testng-results>

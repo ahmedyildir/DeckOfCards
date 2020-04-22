@@ -15,6 +15,7 @@ public class DrawCards extends BaseClass {
     public static final String CARDS_NODE = "cards";
 
 
+
     @BeforeMethod
     public void setUpTest(){
         createDeckApiResponse = createDeckCall();
@@ -31,19 +32,19 @@ public class DrawCards extends BaseClass {
 
     @Test
     public void pickCards(){
-        Response response = drawCard(deck_id,2);
+        Response response = drawCard(deck_id,count);
         int statusCode = response.getStatusCode();
         Assert.assertEquals(statusCode, SUCCESS_CODE, "Status Code Failed!");
 
-
         JsonPath jp = response.jsonPath();
         ArrayList<HashMap<String,Object>> cards = jp.get(CARDS_NODE);
-        HashMap<String, Object> theFirstCard = cards.get(0);
-        HashMap<String, Object> theSecondCard = cards.get(1);
-        System.out.println("First Card No: " + theFirstCard.get("code").toString().substring(0,1));
-        System.out.println("First Card Type: " + theFirstCard.get("suit"));
-        System.out.println("Second Card No: " + theSecondCard.get("code").toString().substring(0,1));
-        System.out.println("Second Card Type: " + theSecondCard.get("suit"));
+
+        for (int i = 0; i<count; i++){
+            HashMap<String, Object> theFirstCard = cards.get(i);
+            System.out.println((i+1) + ". Card = " + theFirstCard.get("value") + " " +theFirstCard.get("suit"));
+
+        }
+
     }
 
 

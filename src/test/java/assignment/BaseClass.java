@@ -14,6 +14,7 @@ public class BaseClass {
 
     public static String deck_id;
     public static Response createDeckApiResponse;
+    public static int count = 6;
     public static Helper helper = new Helper();
 
     static {

@@ -1,14 +1,14 @@
 package assignment;
 
 import io.restassured.response.Response;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 
 public class CreateDeck extends BaseClass {
 
-    @BeforeClass
+    @BeforeMethod
     public void setUpTest(){
         createDeckApiResponse = createDeckCall();
         deck_id = helper.pickDeckId(createDeckCall());
@@ -25,7 +25,7 @@ public class CreateDeck extends BaseClass {
     public void testPostCallFail() {
         Response response = createDeckPostCall();
         int statusCode = response.getStatusCode();
-        Assert.assertEquals(statusCode, SUCCESS_CODE);
+        Assert.assertEquals(statusCode, CODE_301);
     }
 
 

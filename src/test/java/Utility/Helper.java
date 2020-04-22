@@ -13,7 +13,6 @@ public class Helper {
         }
         String[] array = responseBody.replaceAll("[{}:,\"]","").split(" ");
         String deckID = array[3];
-        System.out.println("Created Deck ID = " + deckID);
         return deckID;
     }
 

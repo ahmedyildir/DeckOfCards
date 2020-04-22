@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name = "DeckOfCards">
-    <test name= "Assignment">
-        <classes>
-            <class name="assignment.CreateDeck"/>
-            <class name="assignment.DrawCards"/>
-        </classes>
-    </test>
-</suite>
